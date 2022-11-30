@@ -448,6 +448,10 @@ p{
 }
 .discovery-vehicles-box-slider{
   margin-top: 56px;
+  display: none;
+}
+.discovery-vehicles-box-slider.active{
+  display: block;
 }
 .swiper-wrapper{
   width: 100%;
