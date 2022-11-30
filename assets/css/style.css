@@ -135,7 +135,9 @@ p{
   right: 0;
   z-index: -1;
   background-color: #fff;
+  display: none;
 }
+
 .header-container .menu-full-width-contain {
   position: relative;
   width: 1200px;
@@ -162,7 +164,7 @@ p{
   border-bottom: 1px solid #000;
 }
 .header-container .box-product-show {
-  height: 525px;
+  height: 327px;
   overflow: hidden;
   display: flex;
 }
@@ -174,7 +176,12 @@ p{
   align-items: center;
   height: 76px;
   border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
   position: relative;
+}
+.dropdown-nav :hover .dropdown-nav-menu-full-width{
+  display: block;
+
 }
 .header-container .dropdown-nav-menu-footer-item {
   margin: 0 46px;
@@ -190,7 +197,8 @@ p{
   margin-right: 4px;
 }
 .box-image .product-show-item-image{
-  height: 105px;
+  width: 234px;
+  height: 100px;
 }
 .header-container .product-show-item-name {
   font-weight: 700;
@@ -205,7 +213,50 @@ p{
   margin-bottom: 0;
   border-bottom: 1px solid #ccc;
 }
-
+.header-container .box-product-show .product-show-item {
+  position: relative;
+  min-width: calc((100%/4.5) - 32px);
+  margin-right: 32px;
+  display: block;
+  left: 0;
+  transition: all .5s ease;
+  max-width: calc((100%/4.5) - 32px);
+}
+.header-desktop-container .box-tools-banner {
+  width: 100%;
+  max-width: 873px;
+}
+.box-tools-banner > img{
+  width: 100%;
+}
+.header-container .box-tools-contain {
+  position: relative;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.header-container .box-tools-menu {
+  margin-top: 53px;
+  margin-left: 120px;
+}
+.header-container .subnav-dropdown-link {
+  margin: 12px 0;
+  cursor: pointer;
+  height: 34px;
+}
+.box-tools-menu ul{
+  display: flex;
+  flex-direction: column;
+}
+.subnav-dropdown-link:hover a{
+  color: #EB0A1E;
+  font-weight: bold;
+}
+.box-tools-contain .box-tools-banner img{
+  height:384px ;
+}
 
 
 
@@ -450,6 +501,7 @@ p{
   object-fit: cover;
   object-position: center;
   margin-bottom: 24px;
+  width: 373.3333px;
 }
 .service-news{
   margin-top: 60px;
