@@ -52,15 +52,23 @@ p{
   transition: 0.2s linear all;
 }
 
+.line-header{
+  height: 4px;
+  background-color: #EB0A1E;
+  width: inherit;
+  margin-top: -4px;
+}
 
 .header-container{
   position: fixed;
   top: 0;
-  border-bottom: 4px solid #EB0A1E;
   width: 100%;
   background-color: #fff;
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
 }
 .header-box{
   display: flex;
@@ -104,8 +112,8 @@ p{
   font-size: 10px;
 }
 .header-info{
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin-top: 6px;
+  margin-bottom: 6px;
 }
 .header-container .header-list .header-list-item{
   margin-right: 22px;
@@ -113,7 +121,7 @@ p{
 .dropdown-nav-toggle{
   display: flex;
   align-items: center;
-  height: 47px;
+  height: 50px;
   font-size: 16px;
   padding: 0 14px;
   position: relative;
@@ -136,6 +144,7 @@ p{
   z-index: -1;
   background-color: #fff;
   display: none;
+  margin-top: -4px;
 }
 .dropdown-nav-menu-full-width .box-intro-contain{
   display: flex;
@@ -357,6 +366,12 @@ p{
   height:384px ;
 }
 
+.header-container .header-box .header-block
+.header-navbar .line-header{
+  height: 4px;
+  background-color: #000;
+  margin-top: -5px;
+}
 
 
 
